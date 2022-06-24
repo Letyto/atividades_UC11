@@ -1,10 +1,11 @@
-let prompt = require('prompt-sync')()
-
-let dataHoje = new Date()
-let dataEvento = new Date( prompt("Digite a data do evento:"));
-
-if (dataEvento > dataHoje) {
-    console.log("Cadastro permitido.")
-} else {
-    console.log("Cadastro negado, data invalida. a data do evento deve ser superior a ", dataHoje)
+ let listaAluno = ["Ana","joao","Sharon","Sandra","Julia"]
+for(let numero = 0; numero < listaAluno.length; numero++) {
+    //   console.log(numero)
+      if (numero == 0) {
+        console.log("O numero é ZERO.")
+      } else if (numero % 2 == 0) {
+        console.log("o numero",numero,"é par")
+      } else if (numero % 2 == 1) {
+        console.log("o numero", numero,"é IMPAR")
+      }
 }
